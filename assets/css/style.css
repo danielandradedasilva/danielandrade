@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+body {
+    font-size: 100%;
+    background-color: #ff0000;
+}
+
+header.header-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    box-shadow: 0px 0.5px 15px 0px #ff00c844;
+    z-index: 1;
+}
+
+.logoheader {
+    position: absolute;
+    width: 220px;
+    height: 55px;
+    left: 150px;
+    top: 20px;
+}
+
+.nav {
+    width: 375px;
+    margin-left: 650px;
+    display: flex;
+    gap: 100px;
+}
+
+.nav-item {
+    display: flex;
+    gap: 27px;
+}
+
+.nav-itens a {
+    font-size: 1.48rem;
+    color: #fff;
+}
+
+.nav-itens a:hover {
+    color: #08fffb;
+    border-bottom: 0.5px dotted #08fffb;
+    text-shadow: 2px 0px 10px #12141A;
+}
+
+button.nav-itens-button {
+    background-image: url(/assets/img/btn1contato.svg);
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 36px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-right: 115px;
+    cursor: pointer;
+}
+
+button.nav-itens-button:hover {
+    background-image: url(/assets/img/btn2contato.svg);
+    color: #08fffb;
+    text-shadow: 2px 0px 10px #12141A;
+}
+
+
+/*CONTEÚDO*/
+
+main.conteudo-principal {
+    background-color: #12141A;
+}
+
+.section-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    height: 650px;
+    background-color: #12141A;
+    border-top: 25px solid #9d00ff88;
+}
+
+.card-sec1 img {
+    width: 600px;
+    margin-left: 70px;
+    margin-top: 80px;
+}
+
+.card-sec2 img {
+    border-radius: 100%;
+    height: 393px;
+    width: 550px;
+    margin-top: 80px;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+    margin-top: -190px;
+    margin-left: 240px;
+    position: static;
+}
+
+.btn-card {
+    width: 173px;
+    height: 38px;
+    background-image: linear-gradient(to right, #8E0265, #320051);
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 19px;
+    box-shadow: 2px 4px 8px #eb00a55f;
+}
+
+.btn-card:hover {
+    background-image: linear-gradient(to right, #eb00a4, #7000b6);
+    box-shadow: 2px 4px 8px #7000b66d;
+    cursor: pointer;
+    color: #08fffb;
+}
+
+.img-riscos {
+    background-image: url(/assets/img/pl3.png);
+    background-position: left;
+    height: 750px;
+    margin-top: -380px;
+    margin-right: 20px;
+}
+
+main .apresentacao {
+    display: flex;
+    justify-content: center;
+    margin: -188px auto;
+    background-image: url(/assets/img/pl4.png);
+}
+
+main .apresentacao .sobre-inicio {
+    width: 80%;
+    height: 1080px;
+    margin-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    border: 1px solid #ef76390e;
+    box-shadow: 4px 5px 4px #ef76391b;
+    border-radius: 55px;
+    gap: 40px;
+}
+
+.sobre-inicio .title-sobre {
+    margin-top: 60px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 5px dotted #ef7739;
+}
+
+.sobre-inicio .title {
+    color: #fff;
+    font-size: 40px;
+}
+
+.ficha-tecnica {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.ficha-tecnica .ficha-tecnica-texto {
+    color: #fff;
+    font-size: 25px;
+    margin: -30px 20%;
+    position: absolute;
+}
+
+.ficha-tecnica-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 540px;
+    height: 350px;
+    background-image: linear-gradient(to left, #ff00c877, #6b028e);
+    border-radius: 20px;
+    border-right: 1px solid #ffffff54;
+    border-left: 1px solid #ffffff54;
+}
+
+.ficha-tecnica .ficha-tecnica-card .ficha-tecnica-itens {
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    margin-top: 2px;
+}
+
+ul li .etec,
+ul li .stackx {
+    color: #efb539;
+    border: none;
+    font-size: 23px;
+}
+
+.img-ficha-tecnica img {
+    width: 350px;
+    height: 350px;
+    margin-top: -50px;
+}
