@@ -12,6 +12,12 @@ body {
     background-color: red;
 }
 
+.glass-effect {
+    background: linear-gradient( 106.51deg, rgba(255, 255, 255, 0.03) 3.44%, rgba(255, 255, 255, 0.012) 64.82%);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(25px);
+}
+
 
 /*Header e Navegação*/
 
@@ -21,12 +27,11 @@ header.header-top {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    backdrop-filter: blur(50px);
     position: fixed;
-    height: 100px;
+    height: 90px;
     width: 100%;
-    box-shadow: 0px 0.5px 15px 0px #a200ff4f;
     z-index: 2;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logoheader {
@@ -34,7 +39,7 @@ header.header-top {
     width: 250px;
     height: 155px;
     left: 150px;
-    top: -25px;
+    top: -30px;
 }
 
 .nav {
@@ -62,7 +67,7 @@ header.header-top {
 }
 
 button.nav-itens-button {
-    background-image: url(/assets/img/btn1contato.svg);
+    background-image: url(/assets/img/svg/btn1contato.svg);
     background-repeat: no-repeat;
     width: 130px;
     height: 36px;
@@ -76,7 +81,7 @@ button.nav-itens-button {
 }
 
 button.nav-itens-button:hover {
-    background-image: url(/assets/img/btn2contato.svg);
+    background-image: url(/assets/img/svg/btn2contato.svg);
     color: #08fffb;
     text-shadow: 2px 0px 10px #12141A;
 }
@@ -178,7 +183,7 @@ main.conteudo-principal {
 .btn {
     width: 173px;
     height: 38px;
-    background-image: linear-gradient(to right, #8E0265, #320051);
+    background-image: linear-gradient(to right, #8E0265, rgb(50, 0, 81));
     border: none;
     border-radius: 15px;
     color: #fff;
@@ -201,7 +206,7 @@ main.conteudo-principal {
 }
 
 .img-riscos {
-    background-image: url(/assets/img/pl3.png);
+    background-image: url(/assets/img/png/pl3.png);
     background-repeat: repeat-x;
     height: 750px;
     margin-right: 20px;
@@ -215,7 +220,7 @@ main .apresentacao {
     display: flex;
     justify-content: center;
     margin: -188px auto;
-    background-image: url(/assets/img/pl4.png);
+    background-image: url(/assets/img/png/pl4.png);
 }
 
 main .apresentacao .sobre-inicio {
@@ -225,9 +230,7 @@ main .apresentacao .sobre-inicio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    backdrop-filter: blur(15px);
-    border: 1px solid #ef76390e;
-    box-shadow: 4px 5px 4px #ef76391b;
+    border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 55px;
     gap: 40px;
 }
@@ -241,9 +244,9 @@ main .apresentacao .sobre-inicio {
     border-bottom: 5px dotted #ef7739;
 }
 
-.sobre-inicio .title2 {
+.title2 {
     color: #fff;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .ficha-tecnica {
@@ -341,47 +344,189 @@ ul li .stackx {
 /*Fim sobre*/
 
 
-/*Inicio Portifolio*/
+/*Inicio habilidades*/
 
-.portifolio {
-    background-image: linear-gradient(310deg, #3415bd, #df2b70d4);
-    background-size: cover;
+.habilidades {
+    background-image: linear-gradient(310deg, #d17614, #a7345c, #680630);
     width: 100%;
-    height: 900px;
-    margin-top: 185px;
-    display: flex;
-    justify-content: center;
+    height: 1080px;
+    margin-top: 188px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
 }
 
-.inicio-apresentacao {
-    width: 80%;
+.habilidades .circulo {
+    width: 1px;
+    height: 1px;
+}
+
+.habilidades .circulo-p1 {
+    margin-left: 120px;
+    margin-top: 200px;
+    width: 200px;
+}
+
+.habilidades .circulo-p2 {
+    margin-left: -100px;
+    margin-top: -200px;
+    width: 420px;
+}
+
+.inicio-apresentacao-habilidades {
+    width: 100%;
     height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
 }
 
-.cards-portifolio {
+.inicio-apresentacao-habilidades>h3 {
+    color: #fff;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.cards-habilidades {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 80px;
+    align-items: flex-end;
+    justify-content: center;
     height: 500px;
-    margin-top: 80px;
+    margin-top: 20px;
+    gap: 45px;
 }
 
 .cards-itens {
+    position: relative;
+    color: #ffffff;
+    height: 360px;
     width: 280px;
-    height: 400px;
     border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1.5px solid rgba(255, 255, 255, 0.22);
+    box-shadow: rgb(0 0 0 / 50%) 0px 2px 5px;
+    backdrop-filter: blur(15px);
+}
+
+.cards-itens .svg-habilidades {
+    width: 130px;
+    margin-top: 10px;
+}
+
+.cards-itens .svg-habilidades,
+.cards-itens>h3 {
+    width: 150px;
+    margin-bottom: 8px;
     text-align: center;
-    background-color: #ffffff33;
-    backdrop-filter: blur(30px);
+    font-size: 23px;
+    transform: translateY(50px);
+    transition: 0.5s ease-in;
 }
 
-.card-centro {
-    margin-top: -80px;
+.cards-itens:hover .svg-habilidades,
+.cards-itens:hover h3 {
+    width: 100px;
+    font-size: 19px;
+    transform: translateY(0px);
+    transition: 0.5s ease-in;
+    margin-bottom: 5px;
+}
+
+.cards-itens>span {
+    opacity: 0;
+    padding: 8px;
+    transform: translateY(100px);
+    transition: 0.5s ease-in;
+}
+
+.cards-itens:hover>span {
+    opacity: 1;
+    padding: 8px;
+    transform: translateY(0px);
+    transition: 0.5s ease-in;
+}
+
+.mais-tecnologias {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+    border-left: 0.5px solid rgba(136, 136, 136, 0.419);
+    border-bottom: 0.5px solid rgba(136, 136, 136, 0.419);
+    box-shadow: 6px 6px 8px 1px rgba(0, 0, 0, 0.453);
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.mais-tecnologias>h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.table-icons {
+    border-spacing: 15px;
+    padding: 1px;
+}
+
+.table-finished {
+    margin-bottom: 15px;
+}
+
+.table-icons td {
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.659);
+    cursor: pointer;
+}
+
+.table-icons span {
+    font-size: 25px;
+    color: #1e212c;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -45px;
+    transition: .3s ease;
+    opacity: 0;
+}
+
+.table-icons img {
+    margin-top: 5px;
+    width: 50px;
 }
 
 
-/*Fim Portifolio*/
+/*Fim habilidades*/
+
+
+/*Inicio portifolio*/
+
+.portifolio {
+    width: 100%;
+    height: 1080px;
+    overflow: hidden;
+}
+
+.portifolio .bola {
+    margin-top: 200px;
+}
+
+.portifolio .bola img {
+    width: 250px;
+    margin-left: -50px;
+}
+
+
+/*Fim portifolio*/
