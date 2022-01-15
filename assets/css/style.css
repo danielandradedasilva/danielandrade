@@ -77,7 +77,7 @@
     }
     
     button.nav-itens-button {
-        background-image: url(/assets/img/svg/btn1contato.svg);
+        background-image: url(../img/svg/btn1contato.svg);
         background-repeat: no-repeat;
         width: 130px;
         height: 36px;
@@ -91,7 +91,7 @@
     }
     
     button.nav-itens-button:hover {
-        background-image: url(/assets/img/svg/btn2contato.svg);
+        background-image: url(../img/svg/btn2contato.svg);
         color: var(--color-buttons-ligth);
         text-shadow: 2px 0px 10px var(--bg-mainDark);
     }
@@ -214,7 +214,7 @@
     }
     
     .img-riscos {
-        background-image: url(/assets/img/png/pl3.png);
+        background-image: url(../img/png/pl3.png);
         background-repeat: repeat-x;
         height: 750px;
         margin-right: 20px;
@@ -226,7 +226,7 @@
         display: flex;
         justify-content: center;
         margin: -188px auto;
-        background-image: url(/assets/img/png/pl4.png);
+        background-image: url(../img/png/pl4.png);
     }
     
     main .apresentacao .sobre-inicio {
