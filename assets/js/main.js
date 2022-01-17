@@ -9,7 +9,7 @@ function initAll() {
 }
 
 function effectsOnCards() {
-    VanillaTilt.init(document.querySelectorAll(".ffff"), {
+    VanillaTilt.init(document.querySelectorAll(".fff"), {
         max: 15,
         speed: 300,
         glare: true,

@@ -24,8 +24,10 @@
         </nav>
     </header>
     <!--Fim Header com logo e a navegção e botão contato-->
+
     <!--Inicío Main conteúdo principal-->
     <main class="conteudo-principal">
+        <!-- Inicio Home-->
         <section class="section-home">
             <img src="./assets/img/png/fundobolinha.png" class="fundo-bolinhas-esq" alt="Imagen de bolinhas no fundo">
             <img src="./assets/img/png/fundobolinha.png" class="fundo-bolinhas-dir" alt="Imagen de bolinhas no fundo">
@@ -46,12 +48,12 @@
                 </div>
             </div>
             <div class="card-sec2">
-                <img src="./assets/img/png/gifPerfil.gif" class="gif" alt="Gif com caricaturas" />
+                <div class="foto-top">
+                </div>
             </div>
         </section>
+        <!--Fim Home-->
         <div class="img-riscos"></div>
-
-        <!---->
         <section class="apresentacao">
             <div class="sobre-inicio glass-effect">
                 <span class="title">Sobre mim</span>
@@ -78,11 +80,13 @@
                         <li class="ficha-tecnica-itens">
                             Área de atuação:&nbsp;&nbsp;Desenvolvedor Front-end</li>
                     </ul>
-                    <div class="img-ficha-tecnica"><img src="assets/img/png/FT4.png" alt="Caricatura Daniel Andrade"></div>
+                    <div class="img-ficha-tecnica">
+                        <img class="caricatura" src="assets/img/png/FT4.png" alt="Caricatura Daniel Andrade">
+                    </div>
                 </div>
 
                 <div class="foto-mensagem">
-                    <img src="./assets/img/png/fontosemfundo.png" alt="Foto do perfil Daniel Andrade">
+                    <img src="assets/img/png/fontosemfundo.png" alt="">
                     <div class="comentarios">
 
                         <h3>Estou me <q class="personalizado">qualificando</q> ao máximo.</h3>
@@ -109,17 +113,25 @@
                     <div class="cards-itens glass-effect">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="svg-habilidades" />
                         <h3>HTML 5</h3>
-                        <span>descrição Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi tempora nesciunt iusto magni? Sapiente similique dolores, officia quo hic itaque repellendus, iusto debitis placeat illum, qui nulla alias labore maiores?</span>
+                        <span>
+                            Com a linguagem de marcação HTML5, tenho conhecimentos avançados.
+                            Trabalhando com as mais recentes "TAGS", utilizando assim uma semântica no código, deixando ele legivel e fácil de se dar manutenção.   
+                        </span>
                     </div>
-                    <div class="cards-itens glass-effect" style="height: 400px;">
+                    <div class="cards-itens glass-effect">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="svg-habilidades" />
                         <h3>CSS 3</h3>
-                        <span>descrição Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus a fugiat provident doloremque cum sed fuga dignissimos nihil nobis. Provident quia dolor accusantium iusto! Assumenda atque aspernatur dicta quis beatae?</span>
+                        <span>
+                            Consigo desenvolver sites responsivos e com layouts modernos, utilizando os meus conhecimentos intermediário com CSS 3. Assim posso deixar a aplicação com o perfil desejado pelo cliente.
+                        </span>
+
                     </div>
                     <div class="cards-itens glass-effect">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="svg-habilidades" />
                         <h3>JavaScript</h3>
-                        <span>descrição Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, magni at architecto aspernatur voluptate doloribus non dicta qui iure quis! Ipsam, accusamus ut voluptatem itaque tempore harum voluptates voluptatum eius?</span>
+                        <span style="margin-left: 13px;">
+                            Com javaScript consigo dar vida e interatividade aos elementos da página. Nesta linguagen de programação tenho conhecimentos intermediário. Sei POO e Classes. JavaScript é uma ferramenta poderosa.
+                        </span>
                     </div>
                     <div class="circulo">
                         <img src="assets/img/svg/circulo1.svg" class="circulo-p2" alt="">
@@ -183,7 +195,6 @@
 
     </main>
     <!--Fim Main conteúdo principal-->
-
 
     <script src="assets/js/vanilla-tilt.babel.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
