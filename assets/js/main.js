@@ -1,8 +1,5 @@
 'use strict';
 
-
-
-
 function initAll() {
     revealName();
     effectsOnCards();
@@ -21,7 +18,7 @@ function revealName() {
     document.addEventListener('click', (e) => {
         const el = e.target;
         if (el.classList.contains('imgIcons')) {
-            alert('okkkk')
+
         }
 
     })

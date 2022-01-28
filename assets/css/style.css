@@ -31,6 +31,13 @@ body {
     backdrop-filter: blur(25px);
 }
 
+.parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
 
 /*Header e Navegação*/
 
@@ -115,10 +122,6 @@ button.nav-itens-button:hover {
     height: 650px;
     border-top: 1px solid var(--color-orange-ligth);
     background-image: url(../img/jpg/bg-image-top.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    background-attachment: fixed;
 }
 
 .card-sec1 {
@@ -500,30 +503,56 @@ ul li .stackx {
     margin-bottom: 15px;
 }
 
+.table-icons tr {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .table-icons td {
-    text-align: center;
     width: 80px;
     height: 80px;
     background-color: var(--text-white);
     border-radius: 10px;
     box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.659);
+    transition: .8s ease all;
     cursor: pointer;
 }
 
-.table-icons span {
-    font-size: 25px;
-    color: var(--bg-mainDark);
-    position: absolute;
-    margin-top: 20px;
-    margin-left: -45px;
-    transition: .3s ease;
-    opacity: 0;
+.table-icons td:hover {
+    transform: scale(1.2);
 }
 
 .table-icons img {
+    margin-left: 4px;
     margin-top: 5px;
-    width: 50px;
+    width: 70px;
     cursor: pointer;
+    transition: .5s ease all;
+}
+
+.table-icons span {
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    color: var(--bg-mainDark);
+    position: absolute;
+    margin-top: 43%;
+    transition: .8s ease all;
+    opacity: 0;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.table-icons td:hover img.imgIcons {
+    opacity: 0;
+}
+
+.table-icons td:hover span.text {
+    opacity: 1;
 }
 
 

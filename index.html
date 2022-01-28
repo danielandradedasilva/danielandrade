@@ -28,9 +28,9 @@
     <!--Inicío Main conteúdo principal-->
     <main class="conteudo-principal">
         <!-- Inicio Home-->
-        <section class="section-home">
+        <section class="section-home parallax">
             <div class="card-sec1">
-                <div class="card-sec1-container">
+                <div class="card-sec1-container" data-rellax-speed="-9">
                     <div class="card-sec1-container-degrade-fundo">
                         <div class="card-sec1-container-degrade-frente">
                             <h1 class="title-card-sec1">Olá sejam bem-vindos ao meu site !</h1>
@@ -132,22 +132,22 @@
                     <h3>Aqui você verá mais algumas das tecnologias que já tenho<br> um conhecimento básico, ou que já tive contato.</h3>
                     <table class="table-icons">
                         <tr>
-                            <td class="imgIcons"><img src="assets/img/svg/java-original.svg" class="imgIcons" alt="materialize"></td>
-                            <td class="imgIcons"><img src="assets/img/svg/mysql-original.svg" class="imgIcons" alt="materialize"></td>
-                            <td class="imgIcons"><img src="assets/img/svg/ionic-original.svg" class="imgIcons" alt="materialize"></td>
-                            <td class="imgIcons"><img src="assets/img/svg/vuejs-original.svg" class="imgIcons" alt="materialize"></td>
-                            <td class="imgIcons"><img src="assets/img/svg/firebase-plain.svg" class="imgIcons" alt="materialize"></td>
-                            <td class="imgIcons"><img src="assets/img/svg/git-original.svg" class="imgIcons" alt="materialize"></td>
+                            <td class="imgIcons"><span class="text">Java</span><img src="assets/img/svg/java-original.svg" class="imgIcons" alt="materialize"></td>
+                            <td class="imgIcons"><span class="text">MySql</span><img src="assets/img/svg/mysql-original.svg" class="imgIcons" alt="materialize"></td>
+                            <td class="imgIcons"><span class="text">Ionic</span><img src="assets/img/svg/ionic-original.svg" class="imgIcons" alt="materialize"></td>
+                            <td class="imgIcons"><span class="text">Vue</span><img src="assets/img/svg/vuejs-original.svg" class="imgIcons" alt="materialize"></td>
+                            <td class="imgIcons"><span class="text">Firebase</span><img src="assets/img/svg/firebase-plain.svg" class="imgIcons" alt="materialize"></td>
+                            <td class="imgIcons"><span class="text">Git</span><img src="assets/img/svg/git-original.svg" class="imgIcons" alt="materialize"></td>
                         </tr>
                     </table>
                     <table class="table-icons table-finished">
                         <tr>
-                            <td class="imgIcons"><img src="assets/img/svg/github-original.svg" class="imgIcons" alt="materialize"></td>
-                            <td class="imgIcons"><img src="assets/img/svg/bootstrap-plain.svg" class="imgIcons" alt="materialize"></td>
-                            <td class="imgIcons"><img src="assets/img/svg/materialize.svg" class="imgIcons" alt="materialize"></td>
-                            <td class="imgIcons"><img src="assets/img/png/corel.png" class="imgIcons" alt="materialize"></td>
-                            <td class="imgIcons"><img src="assets/img/svg/photoshop-plain.svg" class="imgIcons" alt="materialize"></td>
-                            <td class="imgIcons"><img src="assets/img/svg/figma-original.svg" class="imgIcons" alt="materialize"></td>
+                            <td class="imgIcons"><span class="text">Github</span><img src="assets/img/svg/github-original.svg" class="imgIcons" alt="materialize"></td>
+                            <td class="imgIcons"><span class="text">Bootstrap</span><img src="assets/img/svg/bootstrap-plain.svg" class="imgIcons" alt="materialize"></td>
+                            <td class="imgIcons"><span class="text">Materialize</span><img src="assets/img/svg/materialize.svg" style="width: 75px;margin-top: 18px; margin-left: 1px;" class="imgIcons" alt="materialize"></td>
+                            <td class="imgIcons"><span class="text">Corel Draw</span><img src="assets/img/png/corel.png" class="imgIcons" alt="materialize"></td>
+                            <td class="imgIcons"><span class="text">PhotoShop</span><img src="assets/img/svg/photoshop-plain.svg" class="imgIcons" alt="materialize"></td>
+                            <td class="imgIcons"><span class="text">Figma</span><img src="assets/img/svg/figma-original.svg" class="imgIcons" alt="materialize"></td>
                         </tr>
                     </table>
                 </div>
@@ -194,7 +194,11 @@
     <!--Fim Main conteúdo principal-->
 
     <script src="assets/js/vanilla-tilt.babel.min.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script>
+        const rellax = new Rellax('.card-sec1-container');
+    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
