@@ -2,11 +2,12 @@
  :root {
     --bg-glassEfect: linear-gradient( 106.51deg, rgba(255, 255, 255, 0.03) 3.44%, rgba(255, 255, 255, 0.012) 64.82%);
     --containerBackgroundGradient: linear-gradient(to right, #362792, #8E0265);
-    --bg-gradient-habilidaes: linear-gradient(310deg, #d17614, #a7345c, #680630);
+    --bg-gradient-habilidades: linear-gradient(310deg, #d17614, #a7345c, #680630);
     --gradient-front-container: linear-gradient(135deg, black, rgb(48, 48, 48), rgb(95, 95, 95), rgb(97, 97, 97));
     --bg-mainDark: #12141A;
     --color-orange-ligth: #ef7739;
     --color-buttons-ligth: #08fffb;
+    --color-purple-ligth: #e1336b;
     --transparent-strokes: rgba(255, 255, 255, 0.1);
     --text-white: #fff;
 }
@@ -23,6 +24,7 @@
 
 body {
     background-color: var(--bg-mainDark);
+    max-width: 1400px;
 }
 
 .glass-effect {
@@ -77,6 +79,7 @@ header.header-top {
 
 .nav-itens a {
     font-size: 1.48rem;
+    cursor: pointer;
     color: var(--text-white);
 }
 
@@ -120,7 +123,7 @@ button.nav-itens-button:hover {
     max-width: 1400px;
     width: 100%;
     height: 650px;
-    border-top: 1px solid var(--color-orange-ligth);
+    border-top: 1px solid var(--color-purple-ligth);
     background-image: url(../img/jpg/bg-image-top.jpg);
 }
 
@@ -187,7 +190,7 @@ button.nav-itens-button:hover {
 .btn {
     width: 173px;
     height: 38px;
-    background-image: linear-gradient(to right, #8E0265, rgb(50, 0, 81));
+    background: linear-gradient(to right, #8E0265, rgb(50, 0, 81));
     border: none;
     border-radius: 15px;
     color: var(--text-white);
@@ -196,7 +199,7 @@ button.nav-itens-button:hover {
 }
 
 .btn:hover {
-    background-image: linear-gradient(to right, #eb00a4, #7000b6);
+    background: linear-gradient(to right, #eb00a4, #7000b6);
     box-shadow: 2px 4px 8px #7000b66d;
     cursor: pointer;
     color: var(--color-buttons-ligth);
@@ -260,7 +263,7 @@ main .apresentacao .sobre-inicio {
     width: 540px;
     height: 350px;
     gap: 5px;
-    background-image: linear-gradient(to left, #ff00c877, #6b028e);
+    background: linear-gradient(to left, #ff00c877, #6b028e);
     border-radius: 20px;
     border-right: 1px solid #ffffff54;
     border-left: 1px solid #ffffff54;
@@ -349,7 +352,7 @@ ul li .stackx {
 /*Inicio habilidades*/
 
 .habilidades {
-    background-image: var(--bg-gradient-habilidaes);
+    background-image: var(--bg-gradient-habilidades);
     width: 100%;
     height: 1080px;
     margin-top: 0px;
@@ -526,7 +529,7 @@ ul li .stackx {
 }
 
 .table-icons img {
-    margin-left: 4px;
+    margin-left: 5px;
     margin-top: 5px;
     width: 70px;
     cursor: pointer;
@@ -579,30 +582,302 @@ ul li .stackx {
     margin-top: 35px;
 }
 
+.frase-portifolio {
+    color: var(--text-white);
+    font-weight: 100;
+    width: 600px;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.6em;
+    margin-top: 5px;
+}
+
 .portifolio .bola {
-    margin-top: 100px;
-    margin-left: -1200px;
+    margin-right: 1600px;
+    filter: blur(250px);
 }
 
 .portifolio .bola img {
-    width: 250px;
+    width: 700px;
+    position: absolute;
 }
 
 .portifolio .bola2 {
-    margin-top: 30px;
-    margin-left: 1000px;
+    margin-top: 390px;
+    margin-right: -1090px;
+}
+
+.portifolio .bola2 img {
+    width: 250px;
 }
 
 .card-principal-portifolio {
-    width: 80%;
-    height: 550px;
+    width: 90%;
+    height: 500px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    margin-top: 220px;
+    margin-top: 330px;
     border-radius: 20px;
+    border: 1.5px solid rgba(255, 255, 255, 0.22);
+    padding: 30px;
 }
+
+.container-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    height: 98vh;
+}
+
+#principal {
+    display: flex;
+    width: 80vw;
+    height: 98vh;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90vw;
+    height: 98vh;
+}
+
+.content:first-child {
+    margin-left: -302%;
+}
+
+.content-img img {
+    width: 350px;
+    border-radius: 15px;
+    margin-top: -20px;
+}
+
+.btns-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 360px;
+    margin-top: -100px;
+    margin-left: -655px;
+    position: fixed;
+}
+
+.action-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    font: bold 40px sans-serif;
+    z-index: 1;
+    color: #ffffff;
+    user-select: none;
+}
+
+.action-button:hover {
+    color: var(--color-orange-ligth);
+    border-radius: 10px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    gap: 50px;
+    transition: all 2s;
+}
+
+.titulo-cards {
+    margin-top: -20px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.descricao {
+    color: var(--text-white);
+    font-weight: 100;
+    padding: 45px;
+    margin-top: -65px;
+    margin-left: 30px;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+.hr-cards-port {
+    width: 60%;
+    margin-top: -80px;
+}
+
+.hr-cards-port:nth-child(2) {
+    width: 60%;
+    margin-top: -40px;
+}
+
+.tecnologias {
+    color: var(--text-white);
+    font-size: 19px;
+    margin-top: -50px;
+}
+
+.link {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-link {
+    width: 140px;
+    height: 33px;
+    background-color: transparent;
+    border: 2px solid var(--color-purple-ligth);
+    border-radius: 20px;
+    color: var(--text-white);
+    cursor: pointer;
+    transition: all .5s ease-in;
+}
+
+.btn-git-especifico {
+    margin-top: -40px;
+}
+
+.btn-link a {
+    color: var(--text-white);
+    padding: 15px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.btn-link:hover {
+    background-color: var(--text-white);
+    border: 2px solid var(--text-white);
+    border-radius: 20px;
+    color: var(--color-purple-ligth);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.btn-link a:hover {
+    color: var(--color-purple-ligth);
+    transform: scale(1.6);
+    letter-spacing: 3px;
+    font-size: 25px;
+}
+
+
+/*
+.slides {
+    width: 600px;
+    display: flex;
+}
+
+.image img {
+    width: 480px;
+    height: 320px;
+}
+
+.btn-carrosel {
+    position: absolute;
+    color: #fff;
+    height: 320px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7em;
+}
+
+.btn-carrosel:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#back {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    left: 2.75%;
+}
+
+#next {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    right: 52.62%;
+}
+
+.links {
+    color: var(--text-white);
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.links .btn-link {
+    width: 200px;
+    height: 37px;
+    padding: 6px;
+    margin-top: -20px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0);
+    border: 1.5px solid var(--color-purple-ligth);
+    color: var(--text-white);
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.links .btn-link:nth-child(2) {
+    margin-top: -7px;
+}
+
+.links .btn-link:hover {
+    transform: scale(1.1);
+    background-color: var(--text-white);
+    border: var(--text-white);
+    color: var(--color-purple-ligth);
+}
+
+
+
+
+.link-github {
+    width: 120px;
+    height: 35px;
+    padding: 3px;
+    border: 1.5px solid var(--color-purple-ligth);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--text-white);
+    margin-bottom: -80px;
+    font-size: 21px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.link-github:hover {
+    background-color: var(--text-white);
+    color: var(--color-purple-ligth);
+    border: 1.5px solid var(--text-white);
+    transform: scale(1.1);
+}
+*/
 
 
 /*Fim portifolio*/

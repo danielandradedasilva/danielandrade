@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio - Daniel Andrade </title>
+    <script src="https://kit.fontawesome.com/ca14b9e588.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -49,6 +50,7 @@
         </section>
         <!--Fim Home-->
 
+        <!--Início apresentação-->
         <section class="apresentacao">
             <div class="sobre-inicio glass-effect">
                 <span class="title">Sobre mim</span>
@@ -92,7 +94,9 @@
 
             </div>
         </section>
+        <!--Fim apresentação-->
 
+        <!--Início habilidades-->
         <section class="habilidades">
             <div class="circulo">
                 <img src="assets/img/svg/circulo2.svg" class="circulo-p1" alt="">
@@ -144,7 +148,7 @@
                         <tr>
                             <td class="imgIcons"><span class="text">Github</span><img src="assets/img/svg/github-original.svg" class="imgIcons" alt="materialize"></td>
                             <td class="imgIcons"><span class="text">Bootstrap</span><img src="assets/img/svg/bootstrap-plain.svg" class="imgIcons" alt="materialize"></td>
-                            <td class="imgIcons"><span class="text">Materialize</span><img src="assets/img/svg/materialize.svg" style="width: 75px;margin-top: 18px; margin-left: 1px;" class="imgIcons" alt="materialize"></td>
+                            <td class="imgIcons"><span class="text">Materialize</span><img src="assets/img/svg/materialize.svg" style="width: 75px;margin-top: 18px; margin-left: 2px;" class="imgIcons" alt="materialize"></td>
                             <td class="imgIcons"><span class="text">Corel Draw</span><img src="assets/img/png/corel.png" class="imgIcons" alt="materialize"></td>
                             <td class="imgIcons"><span class="text">PhotoShop</span><img src="assets/img/svg/photoshop-plain.svg" class="imgIcons" alt="materialize"></td>
                             <td class="imgIcons"><span class="text">Figma</span><img src="assets/img/svg/figma-original.svg" class="imgIcons" alt="materialize"></td>
@@ -156,6 +160,9 @@
                 </div>
             </div>
         </section>
+        <!--Fim habilidades-->
+
+        <!--Início portifólio-->
         <section class="portifolio">
             <div class="inicio-portifolio">
                 <span class="title">Portifólio</span>
@@ -163,32 +170,34 @@
                 <div class="bola">
                     <img src="assets/img/svg/bola.svg" alt="">
                 </div>
+                <h3 class="frase-portifolio ">Aqui você verá alguns projetos pessoais que desenvolvi sozinho, e também em grupo, através do curso técnico.</h3>
 
                 <div class="card-principal-portifolio glass-effect">
-                    <div class="iamgens-links">
-                        <div class="carrosel">
-                            carrosel-imagens
-                        </div>
-
-                        <div class="links">
-                            github/linkedin
-                        </div>
+                    <!--cards portifólio-->
+                    <div class="container-card">
+                        <div id="principal"></div>
                     </div>
-                    <div class="mural">
-                        informaçoes
+                    <div class="btns-actions">
+                        <div class="action-button" id="previous">&laquo;</div>
+                        <div class="action-button" id="nextt">&raquo;</div>
                     </div>
                 </div>
+
                 <div class="bola2">
                     <img src="assets/img/svg/bola.svg" alt="">
                 </div>
             </div>
         </section>
-        <!--teste-->
-        <section class="teste">
-            <div class="conteudoteste" style="color: antiquewhite;">
+        <!--Fim portifólio-->
+        <!--Início contato-->
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
 
-            </div>
-        </section>
+        <!--Fim contato-->
 
     </main>
     <!--Fim Main conteúdo principal-->
@@ -199,6 +208,7 @@
         const rellax = new Rellax('.card-sec1-container');
     </script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/carrosel.js"></script>
 </body>
 
 </html>
