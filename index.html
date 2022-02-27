@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio - Daniel Andrade </title>
-    <script src="https://kit.fontawesome.com/ca14b9e588.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +25,7 @@
                 <li class="nav-itens"><a href="">Apresentação</a></li>
                 <li class="nav-itens"><a href="">Habilidades</a></li>
                 <li class="nav-itens"><a href="">Portifólio</a></li>
-                <button class="nav-itens-button">Contato</button>
+                <button class="btn-link">Contato</button>
             </ul>
         </nav>
     </header>
@@ -39,8 +44,8 @@
                                 Aqui você poderá me conhecer um pouco.<br> E também sinta-se à vontande para estar entrando em contato comigo.
                             </p>
                             <div class="buttons">
-                                <button class="btn">Quem sou eu ?</button>
-                                <button class="btn">Contato</button>
+                                <button class="btn-link">Quem sou eu ?</button>
+                                <button class="btn-link">Contato</button>
                             </div>
                         </div>
                     </div>
@@ -88,8 +93,21 @@
                     </div>
                 </div>
 
-                <div class="utilidades">
+                <div class="container-passos">
                     <!--Fazer esta parte-->
+
+                    <div class="texto-passos">
+                        <p>
+                            Meus próximos passos será aprender e me especializar em React ou Vue, por exemplo, e em outras tecnologias voltadas para o desenvolvimento web e mobile.
+                        </p>
+                    </div>
+                    <div class="container-cari2">
+                        <img class="caricatura2" src="assets/img/png/FT2.png" alt="Caricatura Daniel Andrade">
+                    </div>
+                    <div class="conteiner-cite">
+                        <q> O Maior inimigo do conhecimento não é a ignorância, é a ilusão do conhecimento. </q>
+                        <cite>- Stephen Hawking</cite>
+                    </div>
                 </div>
 
             </div>
@@ -189,21 +207,119 @@
             </div>
         </section>
         <!--Fim portifólio-->
+        <div class="entre-divs">
+            <div class="entre-divs-content">
+                <div class="imagem-entre-divs">
+                    <img src="/assets/img/png/FT3.png" alt="">
+                </div>
+
+                <div class="texto-entre-divs glass-effect">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, quasi! Ipsum, nobis excepturi praesentium porro ad blanditiis ea fugiat ullam necessitatibus, sequi voluptas. Deleniti totam, quaerat commodi fuga quia et.</p>
+                </div>
+            </div>
+
+        </div>
         <!--Início contato-->
-        <br><br><br>
-        <br><br><br>
-        <br><br><br>
-        <br><br><br>
-        <br><br><br>
-        <br><br><br>
+        <section class="contato">
+            <div class="inicio-contato">
+                <span class="title">Contato</span>
+                <h2 class="title2">Vamos bater um papo?</h2>
+                <div class="bolinhas">
+                    <img src="assets/img/png/fundobolinha.png" alt="">
+                </div>
+                <div class="bola-contato">
+                    <img src="assets/img/svg/bola.svg" alt="">
+                </div>
+
+                <div class="circulo-contato">
+                    <img src="assets/img/svg/circulo2.svg" class="circulo-p1" alt="">
+                </div>
+
+                <div class="circulo-contato">
+                    <img src="assets/img/svg/circulo1.svg" class="circulo-p2" alt="">
+                </div>
+
+                <div class="card-principal-contato glass-effect">
+                    <!--card contato-->
+                    <div class="container-contato">
+                        <form action="">
+
+                            <div class="label-float">
+                                <input type="text" id="nomeCad" class="contato__formulario--campo" placeholder="" required>
+                                <label for="nomeCad">Nome</label>
+
+                            </div>
+
+                            <div class="label-float">
+                                <input type="email" id="email" class="contato__formulario--campo" placeholder="" required>
+                                <label for="email">E-mail</label>
+
+                            </div>
+
+                            <div class="label-float">
+                                <input type="text" id="assunto" class="contato__formulario--campo" required>
+                                <label for="assunto">Assunto</label>
+
+                            </div>
+
+                            <div class="label-float">
+                                <textarea name="mensagem" id="mensagem" class="contato__formulario--campo" required maxlength="280"></textarea>
+                                <label for="mensagem">Mensagem</label>
+                            </div>
+
+                            <button class="btn-enviar">Enviar</button>
+
+                        </form>
+                    </div>
+
+                    <div class="container-contato-texto">
+                        <div class="container-texto">
+
+                            <h2 class="titulo-contato-container-texto">
+                                Que tal conversarmos um pouco?
+                            </h2>
+                            <hr style="width: 65%; margin:0 auto;">
+                            <p class="texto">
+                                Estou sempre aberto para troca de ideias e novas conexões! Sinta-se à vontade para entrar em contato comigo por meio do formulário ou através das minhas redes sociais:
+                            </p>
+
+                            <div class="container-icons-contato">
+                                <ul class="icons-contato">
+                                    <li style="--clr:#116ea3;">
+                                        <p class="linkedin"><i class="fa-brands fa-linkedin"></i></p>
+                                    </li>
+                                    <li style="--clr:#04b152;">
+                                        <p class="whatsapp" target="" blank><i class="fa-brands fa-whatsapp-square"></i></p>
+                                    </li>
+                                    <li style="--clr:#000000;">
+                                        <p class="github"><i class="fa-brands fa-github"></i></p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="container-img">
+                                <img src="assets/img/png/FT1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!--Fim contato-->
 
     </main>
     <!--Fim Main conteúdo principal-->
+    <!--Inicio Footer-->
+
+    <footer>
+        <div class="container-footer">
+            <p>Todos os direitos reservados / Daniel Andrade &copy;</p>
+        </div>
+    </footer>
+    <!--Fim Footer-->
 
     <script src="assets/js/vanilla-tilt.babel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
     <script>
         const rellax = new Rellax('.card-sec1-container');
     </script>
