@@ -1,16 +1,32 @@
 'use strict';
+const phone = 5511948307817;
+const linkedin = 'https://www.linkedin.com/in/daniel-andrade-da-silva/';
+const whatsapp = 'https://web.whatsapp.com/send?phone=';
+const github = 'https://github.com/danielandradedasilva';
 
 function initAll() {
+
+    whatssapMethod();
+
     /**Links contatos */
     document.querySelector('.linkedin').addEventListener('click', () => {
-        window.open('https://www.linkedin.com/in/daniel-andrade-da-silva/');
+        window.open(linkedin);
     });
-    document.querySelector('.whatsapp').addEventListener('click', () => {
-        window.open('https://web.whatsapp.com/send?phone=5511948307817');
-    });
+
     document.querySelector('.github').addEventListener('click', () => {
-        window.open('https://github.com/danielandradedasilva');
+        window.open(github);
     });
+}
+
+function whatssapMethod() {
+    if (window.screen.width > 1000) {
+        document.querySelector('.whatsapp').addEventListener('click', (phone) => {
+            window.open(`${whatsapp}${phone}`);
+        });
+    } else if (window.screen.width <= 1000) {
+        console.log('erro')
+    }
+
 }
 
 /**Scroll Top */

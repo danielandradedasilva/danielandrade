@@ -142,7 +142,7 @@ header.header-top {
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    height: 85px;
+    height: 12vh;
     width: 100%;
     z-index: 2;
     border-bottom: 1px solid var(--transparent-strokes);
@@ -152,8 +152,9 @@ header.header-top {
     position: absolute;
     width: 250px;
     height: 150px;
-    margin-left: -55px;
+    margin-left: -30px;
     margin-top: -73px;
+    pointer-events: none;
 }
 
 .nav {
@@ -170,7 +171,7 @@ header.header-top {
 }
 
 .nav-itens a {
-    font-size: 1.48rem;
+    font-size: 1.4em;
     cursor: pointer;
     color: var(--text-white);
 }
@@ -186,9 +187,10 @@ header.header-top {
     background-color: transparent;
     border: 2px solid var(--color-purple-ligth);
     color: var(--text-white);
-    font-size: 1.3rem;
+    font-size: 1em;
     margin-left: 40px;
     margin-top: 8px;
+    padding: 2px;
     cursor: pointer;
 }
 
@@ -196,6 +198,25 @@ header.header-top {
     color: var(--color-purple-ligth);
     background-color: var(--text-white);
     border: var(--text-white);
+}
+
+.nav-item .nav-itens a {
+    border-bottom: none;
+}
+
+
+/*Menu-Mobile*/
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
 }
 
 
@@ -214,6 +235,7 @@ header.header-top {
     height: 650px;
     border-top: 1px solid var(--color-purple-ligth);
     background-image: url(../img/jpg/bg-image-top.webp);
+    background-size: cover;
 }
 
 .card-sec1 {
