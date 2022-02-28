@@ -71,6 +71,14 @@ html {
     background: var(--bg-gradient-scroll-hover);
 }
 
+::-moz-selection {
+    background-color: var(--color-purple-ligth);
+}
+
+::selection {
+    background-color: var(--color-purple-ligth);
+}
+
 
 /* Scroll top */
 
