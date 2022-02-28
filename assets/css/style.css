@@ -1,16 +1,29 @@
+/*Configuraçoes gerais*/
+
+
+/* Tipografia */
+
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap');
+
+/* Variáveis */
+
  :root {
+    /* Cores */
     --bg-glassEfect: linear-gradient( 106.51deg, rgba(255, 255, 255, 0.03) 3.44%, rgba(255, 255, 255, 0.012) 64.82%);
     --containerBackgroundGradient: linear-gradient(to right, #362792, #8E0265);
     --bg-gradient-habilidades: linear-gradient(310deg, #d17614, #a7345c, #680630);
-    --gradient-front-container: linear-gradient(135deg, black, rgb(48, 48, 48), rgb(95, 95, 95), rgb(97, 97, 97));
+    --gradient-front-container: linear-gradient(135deg, black, rgb(19, 19, 19)30%, rgb(112, 112, 112));
     --bg-mainDark: #12141A;
     --color-orange-ligth: #ef7739;
     --color-buttons-ligth: #08fffb;
     --color-purple-ligth: #e1336b;
     --transparent-strokes: rgba(255, 255, 255, 0.1);
     --text-white: #fff;
+    --color-blue-dark: #0a81cc;
 }
+
+
+/* Reset CSS */
 
 * {
     margin: 0;
@@ -20,6 +33,71 @@
     list-style: none;
     font-family: 'Ropa Sans', sans-serif;
     cursor: context-menu;
+}
+
+
+/**/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: rgba(204, 204, 204, 0.5);
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg-gradient-habilidades);
+    border-radius: 12px;
+    transition: .6s ease all;
+}
+
+
+/* Scroll top */
+
+.scrollTop {
+    outline: none;
+    border: 0;
+    background-color: var(--text-white);
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+}
+
+.scrollTop.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scrollTop .fa-circle-up {
+    font-size: 30px;
+    color: var(--color-purple-ligth);
+    cursor: pointer;
 }
 
 body {
@@ -58,10 +136,10 @@ header.header-top {
 
 .logoheader {
     position: absolute;
-    width: 270px;
-    height: 170px;
+    width: 250px;
+    height: 150px;
     margin-left: -55px;
-    margin-top: -83px;
+    margin-top: -73px;
 }
 
 .nav {
@@ -85,7 +163,7 @@ header.header-top {
 
 .nav-itens a:hover {
     color: var(--color-buttons-ligth);
-    border-bottom: 0.5px dotted var(--color-buttons-ligth);
+    border-bottom: 0.1px solid var(--color-buttons-ligth);
     text-shadow: 2px 0px 10px var(--bg-mainDark);
 }
 
@@ -121,7 +199,7 @@ header.header-top {
     width: 100%;
     height: 650px;
     border-top: 1px solid var(--color-purple-ligth);
-    background-image: url(../img/jpg/bg-image-top.jpg);
+    background-image: url(../img/jpg/bg-image-top.webp);
 }
 
 .card-sec1 {
@@ -175,6 +253,7 @@ header.header-top {
     font-size: 28px;
     margin-top: 35px;
     width: 80%;
+    line-height: 30px;
 }
 
 .buttons {
@@ -190,7 +269,7 @@ header.header-top {
 .apresentacao {
     display: flex;
     justify-content: center;
-    background-image: url(../img/png/pl4.png);
+    background-image: url(../img/png/pl4.webp);
 }
 
 main .apresentacao .sobre-inicio {
@@ -391,7 +470,7 @@ ul li .stackx {
 .habilidades {
     background-image: var(--bg-gradient-habilidades);
     width: 100%;
-    height: 1080px;
+    height: 1160px;
     margin-top: 0px;
     border: 2px solid var(--transparent-strokes);
     overflow: hidden;
@@ -421,6 +500,10 @@ ul li .stackx {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+}
+
+.title-habilidades {
+    margin-top: 100px;
 }
 
 .inicio-apresentacao-habilidades>h3 {
@@ -625,7 +708,7 @@ ul li .stackx {
     width: 600px;
     padding: 25px;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin-top: 5px;
 }
 
@@ -646,6 +729,10 @@ ul li .stackx {
 
 .portifolio .bola2 img {
     width: 260px;
+}
+
+.title-portifolio {
+    margin-top: 100px;
 }
 
 .card-principal-portifolio {
@@ -764,7 +851,8 @@ ul li .stackx {
 .tecnologias {
     color: var(--text-white);
     font-size: 19px;
-    margin-top: -50px;
+    text-align: center;
+    margin-top: -40px;
 }
 
 .link {
@@ -807,10 +895,13 @@ ul li .stackx {
 
 /*Fim portifolio*/
 
+
+/*Inicio entre divs*/
+
 .entre-divs {
     height: 280px;
     width: 100%;
-    background-image: url(/assets/img/png/pl3.png);
+    background-image: url(/assets/img/png/pl3.webp);
     background-attachment: fixed;
 }
 
@@ -829,17 +920,29 @@ ul li .stackx {
 }
 
 .texto-entre-divs {
-    width: 600px;
-    height: 160px;
+    width: 440px;
+    height: 140px;
     padding: 20px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.texto-entre-divs p {
+.texto-entre-divs q {
     color: var(--text-white);
     font-size: 1.6em;
     font-weight: 100;
 }
+
+.texto-entre-divs cite {
+    color: var(--text-white);
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+
+/*Fim entre divs*/
 
 
 /*Inicio contato*/
@@ -856,6 +959,10 @@ ul li .stackx {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.title-contato {
+    margin-top: 100px;
 }
 
 .inicio-contato .title2 {
@@ -892,7 +999,7 @@ ul li .stackx {
 
 .circulo-contato .circulo-p2 {
     margin-left: 300px;
-    margin-top: 410px;
+    margin-top: 380px;
     width: 330px;
     position: absolute;
 }
