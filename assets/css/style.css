@@ -12,6 +12,8 @@
     --bg-glassEfect: linear-gradient( 106.51deg, rgba(255, 255, 255, 0.03) 3.44%, rgba(255, 255, 255, 0.012) 64.82%);
     --containerBackgroundGradient: linear-gradient(to right, #362792, #8E0265);
     --bg-gradient-habilidades: linear-gradient(310deg, #d17614, #a7345c, #680630);
+    --bg-gradient-scroll: linear-gradient(310deg, #df7d15, #a7345c, #680630);
+    --bg-gradient-scroll-hover: linear-gradient(310deg, #fdac54, #e95589, #ca1664);
     --gradient-front-container: linear-gradient(135deg, black, rgb(19, 19, 19)30%, rgb(112, 112, 112));
     --bg-mainDark: #12141A;
     --color-orange-ligth: #ef7739;
@@ -53,16 +55,20 @@ html {
 /* Track */
 
  ::-webkit-scrollbar-track {
-    background: rgba(204, 204, 204, 0.5);
+    background: rgba(216, 216, 216, 0.5);
 }
 
 
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-    background: var(--bg-gradient-habilidades);
+    background: var(--bg-gradient-scroll);
     border-radius: 12px;
     transition: .6s ease all;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bg-gradient-scroll-hover);
 }
 
 
@@ -901,7 +907,7 @@ ul li .stackx {
 .entre-divs {
     height: 280px;
     width: 100%;
-    background-image: url(/assets/img/png/pl3.webp);
+    background-image: url(../img/png/pl3.webp);
     background-attachment: fixed;
 }
 
@@ -915,8 +921,8 @@ ul li .stackx {
 
 .imagem-entre-divs img {
     width: 350px;
-    margin-top: -64px;
-    position: inherit;
+    height: 350px;
+    margin-top: -70px;
 }
 
 .texto-entre-divs {
