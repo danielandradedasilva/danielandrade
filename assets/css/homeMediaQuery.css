@@ -86,12 +86,12 @@
             justify-content: space-evenly;
             align-items: center;
             flex-wrap: wrap;
-            height: 730px;
+            height: 780px;
         }
         .img-home img {
             height: 90%;
             height: 60%;
-            margin-top: -90px;
+            margin-top: -30px;
         }
         .card-sec-container-content {
             min-width: 300px;
@@ -123,13 +123,14 @@
     @media screen and (max-width: 767px) {
         .img-home img {
             height: 50%;
-            margin-top: -30px;
+            margin-top: 5px;
             position: relative;
         }
         .card-sec-container-content {
-            padding: 200px 35px;
+            padding: 30px 35px;
             text-align: center;
             height: 350px;
+            margin-top: -5px;
         }
         .title-card-sec {
             font-size: 1.8em;
@@ -147,7 +148,7 @@
             margin-top: 30px;
         }
         .btn-link-home {
-            width: 100%;
+            width: 7 0%;
             height: 40px;
             font-size: 1.3em;
         }
