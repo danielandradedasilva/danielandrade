@@ -299,6 +299,7 @@ ul li .stackx {
     }
     .ficha-tecnica .ficha-tecnica-card .ficha-tecnica-itens {
         font-size: 17px;
+        width: 100%;
     }
     .foto-mensagem img {
         width: 75%;
