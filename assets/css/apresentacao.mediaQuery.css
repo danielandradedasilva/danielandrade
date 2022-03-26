@@ -281,7 +281,8 @@ ul li .stackx {
 
 @media screen and (max-width: 640px) {
     .apresentacao .sobre-inicio {
-        width: 60%;
+        width: 62%;
+        border-radius: 30PX;
     }
     .title2 {
         font-size: 22px;
