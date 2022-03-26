@@ -32,8 +32,12 @@ function whatssapMethod() {
 /**Scroll Top */
 window.addEventListener('scroll', () => {
     let scroll = document.querySelector('.scrollTop');
-    scroll.classList.toggle('active', window.scrollY > 950)
+    scroll.classList.toggle('active', window.scrollY > 950);
+
+
 })
+
+setTimeout()
 
 const scroolTop = () => {
     window.scrollTo({
