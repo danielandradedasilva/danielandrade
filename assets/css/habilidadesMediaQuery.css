@@ -274,12 +274,13 @@
 @media screen and (max-width: 640px) {
     .cards-itens {
         width: 90%;
-        height: 350px;
+        height: 395px;
         margin-right: 20px;
+        font-size: 1.2em;
     }
     .cards-itens:nth-child(2) {
         width: 90%;
-        height: 350px;
+        height: 395px;
     }
     .habilidades {
         height: 2100px;
