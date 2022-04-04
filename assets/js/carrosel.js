@@ -21,11 +21,7 @@ const loadCards = (container) => {
         container.innerHTML += `
             <div class='content'>
                 <div class='content-img'>
-                    <img src='${info.image}' alt="imagens portifólio">
-                    <div class='link'>
-                        <button class='btn-link' onclick="window.open('${info.linkGit}')">Github</button>
-                        <button class='btn-link' onclick="window.open('${info.linkLinkedin}')">Linkedin</button>
-                    </div>
+                    <img src='${info.image}' alt="imagens portifólio">                    
                 </div>  
                 <div class='informacoes'>
                     <span class='titulo-cards'>
@@ -37,12 +33,13 @@ const loadCards = (container) => {
                     </p>
                     <hr class='hr-cards-port'>
                     <p class='tecnologias'>
-                    Tecnologias usadas:<br><br>
+                    Tecnologias usadas:<br>
                         ${info.tec}
                     </p>
-                    <div class='btn-git-especifico'>
+                    <div class='link'>
                         <button class='btn-link' onclick="window.open('${info.linkGitProjeto}')">Github</button>
-                    <div>
+                        <button class='btn-link' onclick="window.open('${info.linkLinkedin}')">Linkedin</button>
+                    </div>
                 </div>
             </div>
 
