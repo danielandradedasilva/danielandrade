@@ -152,7 +152,7 @@
     width: 100%;
     padding: 45px;
     margin-top: -85px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     letter-spacing: 1px;
 }
 
@@ -274,6 +274,9 @@
         font-size: .8em;
         padding: 0 230px;
     }
+    .card-principal-portifolio {
+        height: 780px;
+    }
     .hr-cards-port {
         width: 100%;
     }
@@ -315,6 +318,9 @@
     .content {
         margin: 0px -180px;
     }
+    .card-principal-portifolio {
+        height: 780px;
+    }
     .btns-actions {
         margin-left: 55px;
     }
@@ -334,6 +340,9 @@
     .content {
         margin: 0px -200px;
     }
+    .card-principal-portifolio {
+        height: 780px;
+    }
     .btns-actions {
         margin-left: 35px;
     }
@@ -346,6 +355,9 @@
     }
     .content {
         margin: 0px -225px;
+    }
+    .card-principal-portifolio {
+        height: 780px;
     }
     .btns-actions {
         margin-left: 10px;
@@ -365,6 +377,9 @@
     .content {
         margin: 0px -245px;
     }
+    .card-principal-portifolio {
+        height: 780px;
+    }
     .btns-actions {
         margin-left: 5px;
         gap: 220px;
@@ -376,19 +391,23 @@
 }
 
 @media screen and (max-width: 360px) {
+    .portifolio {
+        height: 1070px;
+    }
     .portifolio .bola2 img {
         width: 180px;
     }
     .card-principal-portifolio {
         width: 85%;
-        height: 700px;
+        height: 690px;
         margin-top: 350px;
     }
     .content {
-        margin: 0px -255px;
+        margin: -330px -255px;
     }
     .btns-actions {
         margin-left: -5px;
+        margin-top: -255px;
     }
     .content-img img {
         width: 230px;
@@ -397,11 +416,18 @@
 }
 
 @media screen and (max-width: 320px) {
+    .card-principal-portifolio {
+        margin-left: 10px;
+    }
+    .portifolio {
+        height: 1110px;
+    }
     .content {
         margin: 0px -270px;
     }
     .btns-actions {
         margin-left: -10px;
+        margin-top: 55px;
         gap: 200px;
     }
     .action-button {
@@ -411,5 +437,6 @@
     .content-img img {
         width: 230px;
         height: 160px;
+        margin-top: -20px;
     }
 }

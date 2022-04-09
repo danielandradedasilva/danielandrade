@@ -302,3 +302,9 @@
         flex-wrap: wrap;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .habilidades {
+        height: 2500px;
+    }
+}

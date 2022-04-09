@@ -1,0 +1,447 @@
+/*Inicio entre divs*/
+
+.entre-divs {
+    height: 280px;
+    width: 100%;
+    background-image: url(../img/png/pl3.webp);
+    background-attachment: fixed;
+}
+
+.entre-divs-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imagem-entre-divs img {
+    width: 350px;
+    height: 350px;
+    margin-top: -70px;
+}
+
+.texto-entre-divs {
+    width: 440px;
+    height: 140px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.texto-entre-divs q {
+    color: var(--text-white);
+    font-size: 1.2em;
+    line-height: 28px;
+    font-weight: 100;
+}
+
+.texto-entre-divs cite {
+    color: var(--text-white);
+    font-size: 1.4em;
+    text-align: end;
+    font-weight: 100;
+}
+
+
+/*Fim entre divs*/
+
+
+/*Inicio contato*/
+
+.contato {
+    width: 100%;
+    height: 900px;
+    background-color: var( --bg-mainDark);
+    overflow: hidden;
+}
+
+.inicio-contato {
+    width: 100%;
+    height: 880px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-contato {
+    margin-top: 100px;
+}
+
+.inicio-contato .title2 {
+    color: var(--text-white);
+    font-size: 35px;
+    margin-top: 5px;
+}
+
+.bolinhas {
+    margin-right: 1120px;
+}
+
+.bolinhas img {
+    width: 180px;
+    position: absolute;
+}
+
+.bola-contato {
+    margin-right: 50px;
+    filter: blur(250px);
+}
+
+.bola-contato img {
+    width: 1200px;
+    position: absolute;
+}
+
+.circulo-contato .circulo-p1 {
+    margin-left: 360px;
+    margin-top: -60px;
+    width: 230px;
+    position: absolute;
+}
+
+.circulo-contato .circulo-p2 {
+    margin-left: 300px;
+    margin-top: 380px;
+    width: 330px;
+    position: absolute;
+}
+
+.card-principal-contato {
+    width: 100%;
+    height: 600px;
+    margin-top: 40px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    border: .5px solid rgba(136, 136, 136, 0.419);
+    box-shadow: 6px 6px 8px 1px rgba(0, 0, 0, 0.453);
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.container-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float label {
+    font-size: 17px;
+    color: var(--text-white);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus+label,
+.label-float input:valid+label,
+.label-float textarea:focus+label,
+.label-float textarea:valid+label {
+    font-size: 15px;
+    margin-top: 0;
+    color: #c2c2c2;
+}
+
+.contato__formulario--campo {
+    overflow: auto;
+    resize: none;
+    color: var(--text-white);
+    display: block;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #ffffff;
+    border-image-source: linear-gradient(-15deg, #630094 0%, #ff72d5 100%);
+    border-image-slice: 1;
+    outline: none;
+    height: 36px;
+    margin-bottom: 48px;
+    width: 100%;
+    font-size: 17px;
+    box-sizing: border-box;
+    font-weight: 300;
+    transition: 1s ease all;
+    cursor: pointer;
+}
+
+textarea.contato__formulario--campo {
+    height: 80px;
+    margin-top: 10px;
+    line-height: 23px;
+}
+
+.contato__formulario--campo:invalid {
+    border-image-source: var(--gradient);
+}
+
+.btn-enviar {
+    width: 280px;
+    height: 33px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid var(--color-purple-ligth);
+    border-radius: 10px;
+    color: var(--text-white);
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all .3s ease-in;
+}
+
+.btn-enviar:hover {
+    background-color: var(--text-white);
+    border: var(--text-white);
+    color: var(--color-purple-ligth);
+    font-size: 21px;
+    transform: scale(1.1);
+}
+
+.container-contato-texto {
+    width: 550px;
+    height: 500px;
+    padding: 5px;
+}
+
+.container-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.titulo-contato-container-texto {
+    color: var(--text-white);
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.texto {
+    font-size: 20px;
+    font-weight: 100;
+    max-width: 520px;
+    padding: 21px;
+    margin-top: -20px;
+    line-height: 130%;
+    margin-left: 30px;
+    color: var(--text-white);
+}
+
+.container-icons-contato {
+    margin: -10px 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.icons-contato {
+    position: relative;
+    display: flex;
+    gap: 35px;
+    cursor: pointer;
+}
+
+.icons-contato li {
+    position: relative;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+}
+
+.icons-contato li:hover {
+    z-index: 10000;
+    transform: scale(1);
+}
+
+.icons-contato li p {
+    position: relative;
+    text-decoration: none;
+    color: var(--text-white);
+    z-index: 10;
+    font-size: 2.3em;
+    transition: 0.2s ease;
+}
+
+.icons-contato li p i {
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.icons-contato li:hover p {
+    font-size: 3em;
+    color: var(--clr);
+}
+
+.container-img {
+    margin-top: -74px;
+}
+
+.container-img img {
+    width: 520px;
+    transform: translate3d(0, 0, 0);
+    animation: flutuar 3.8s ease infinite;
+}
+
+@keyframes flutuar {
+    from,
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, -24px, 0);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .entre-divs {
+        height: 500px;
+    }
+    .entre-divs-content {
+        flex-direction: column;
+        height: 520px;
+    }
+    .imagem-entre-divs img {
+        width: 300px;
+        height: 300px;
+        margin-top: -60px;
+        margin-left: 10px;
+    }
+    .texto-entre-divs {
+        margin-left: 10px;
+        width: 260px;
+        height: 180px;
+        line-height: 15px;
+        margin-bottom: 20px;
+    }
+    .contato {
+        height: 1400px;
+    }
+    .bolinhas {
+        margin-right: 400px;
+        display: none;
+    }
+    .circulo-contato .circulo-p1 {
+        margin-left: 30px;
+        margin-top: -10px;
+        width: 130px;
+    }
+    .circulo-contato .circulo-p2 {
+        margin-left: -200px;
+        margin-top: 780px;
+        width: 220px;
+    }
+    .inicio-contato .title2 {
+        font-size: 1.5em;
+    }
+    .card-principal-contato {
+        height: 900px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .btn-enviar {
+        width: 260px;
+        height: 33px;
+        font-size: 1.3em;
+        margin-bottom: 20px;
+    }
+    .container-contato-texto {
+        width: 100%;
+        height: 390px;
+    }
+    .titulo-contato-container-texto {
+        font-size: 1.5em;
+    }
+    .container-img {
+        margin-top: 540px;
+        margin-left: -60px;
+    }
+    .container-img img {
+        width: 460px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .entre-divs {
+        height: 500px;
+    }
+    .entre-divs-content {
+        flex-direction: column;
+        height: 520px;
+    }
+    .imagem-entre-divs img {
+        width: 280px;
+        height: 280px;
+        margin-top: -90px;
+        margin-left: 10px;
+    }
+    .texto-entre-divs {
+        width: 260px;
+        height: 180px;
+        line-height: 15px;
+    }
+    /****************************/
+    .contato {
+        height: 1400px;
+    }
+    .bolinhas {
+        margin-right: 400px;
+        display: none;
+    }
+    .circulo-contato .circulo-p1 {
+        margin-left: 30px;
+        margin-top: -10px;
+        width: 130px;
+    }
+    .circulo-contato .circulo-p2 {
+        margin-left: -200px;
+        margin-top: 780px;
+        width: 220px;
+    }
+    .inicio-contato .title2 {
+        font-size: 1.5em;
+    }
+    .card-principal-contato {
+        height: 900px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .btn-enviar {
+        width: 260px;
+        height: 33px;
+        font-size: 1.3em;
+        margin-bottom: 20px;
+    }
+    .container-contato-texto {
+        width: 100%;
+        height: 390px;
+    }
+    .titulo-contato-container-texto {
+        font-size: 1.6em;
+    }
+    .container-img {
+        margin-top: 474px;
+        margin-left: -80px;
+    }
+    .container-img img {
+        width: 460px;
+    }
+}
