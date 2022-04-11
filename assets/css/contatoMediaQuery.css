@@ -9,6 +9,7 @@
 
 .entre-divs-content {
     width: 80%;
+    height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
@@ -22,7 +23,7 @@
 }
 
 .texto-entre-divs {
-    width: 440px;
+    width: 410px;
     height: 140px;
     padding: 20px;
     border-radius: 15px;
@@ -56,6 +57,7 @@
     height: 900px;
     background-color: var( --bg-mainDark);
     overflow: hidden;
+    position: relative;
 }
 
 .inicio-contato {
@@ -77,11 +79,11 @@
 }
 
 .bolinhas {
-    margin-right: 1120px;
+    margin-right: 1100px;
 }
 
 .bolinhas img {
-    width: 180px;
+    width: 150px;
     position: absolute;
 }
 
@@ -128,7 +130,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
+    margin-left: 35px;
 }
 
 .label-float {
@@ -235,10 +239,10 @@ textarea.contato__formulario--campo {
     font-size: 20px;
     font-weight: 100;
     max-width: 520px;
+    width: 100%;
     padding: 21px;
     margin-top: -20px;
     line-height: 130%;
-    margin-left: 30px;
     color: var(--text-white);
 }
 
@@ -311,57 +315,70 @@ textarea.contato__formulario--campo {
     }
 }
 
-@media screen and (max-width: 360px) {
+
+/*******************************************/
+
+@media screen and (max-width: 1023px) {
+    .bolinhas {
+        margin-right: 980px;
+    }
+}
+
+@media screen and (max-width: 838px) {
+    /*Inicio entre divs*/
     .entre-divs {
-        height: 500px;
+        height: fit-content;
     }
     .entre-divs-content {
+        width: 100%;
         flex-direction: column;
-        height: 520px;
     }
     .imagem-entre-divs img {
-        width: 300px;
-        height: 300px;
-        margin-top: -60px;
-        margin-left: 10px;
+        width: 350px;
+        height: 350px;
+        margin-top: 0px;
     }
     .texto-entre-divs {
-        margin-left: 10px;
-        width: 260px;
-        height: 180px;
-        line-height: 15px;
-        margin-bottom: 20px;
+        width: 410px;
+        height: 140px;
+        margin-bottom: 50px;
+    }
+    /*Fim entre divs*/
+    .bolinhas {
+        margin-right: 720px;
     }
     .contato {
-        height: 1400px;
-    }
-    .bolinhas {
-        margin-right: 400px;
-        display: none;
+        height: 1200px;
     }
     .circulo-contato .circulo-p1 {
-        margin-left: 30px;
+        margin-left: 190px;
         margin-top: -10px;
-        width: 130px;
+        width: 300px;
     }
     .circulo-contato .circulo-p2 {
-        margin-left: -200px;
+        margin-left: 200px;
         margin-top: 780px;
-        width: 220px;
+        width: 280px;
     }
     .inicio-contato .title2 {
         font-size: 1.5em;
     }
     .card-principal-contato {
+        width: 85%;
         height: 900px;
         flex-direction: column-reverse;
         align-items: center;
+    }
+    .container-contato {
+        margin-top: 0px;
+        width: 400px;
     }
     .btn-enviar {
         width: 260px;
         height: 33px;
         font-size: 1.3em;
-        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 50px;
     }
     .container-contato-texto {
         width: 100%;
@@ -369,79 +386,92 @@ textarea.contato__formulario--campo {
     }
     .titulo-contato-container-texto {
         font-size: 1.5em;
+        margin-top: 20px;
+        width: 100%;
     }
     .container-img {
-        margin-top: 540px;
-        margin-left: -60px;
+        margin-top: -100px;
+        margin-left: 250px;
+        width: 70%;
     }
     .container-img img {
-        width: 460px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /*Inicio entre divs*/
+    .imagem-entre-divs img {
+        width: 300px;
+        height: 300px;
+    }
+    .texto-entre-divs {
+        width: 80%;
+        height: 20%;
+        margin-bottom: 50px;
+    }
+    /*Fim entre divs*/
+    .bolinhas {
+        width: 50%;
+        margin-right: 230px;
+        margin-top: 25px;
+    }
+    .circulo-contato .circulo-p1 {
+        margin-left: 100px;
+        width: 50%;
+    }
+    .circulo-contato .circulo-p2 {
+        margin-left: 70px;
+        margin-top: 780px;
+        width: 280px;
+    }
+    .container-contato {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .texto {
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+    .container-img {
+        margin-top: -100px;
+        margin-left: 140px;
+        width: 70%;
+    }
+    .container-icons-contato {
+        margin-left: 20px;
+        width: 50%;
     }
 }
 
 @media screen and (max-width: 320px) {
-    .entre-divs {
-        height: 500px;
-    }
-    .entre-divs-content {
-        flex-direction: column;
-        height: 520px;
-    }
+    /*Inicio entre divs*/
     .imagem-entre-divs img {
         width: 280px;
         height: 280px;
-        margin-top: -90px;
-        margin-left: 10px;
     }
-    .texto-entre-divs {
-        width: 260px;
-        height: 180px;
-        line-height: 15px;
-    }
-    /****************************/
-    .contato {
-        height: 1400px;
-    }
+    /*Fim entre divs*/
     .bolinhas {
-        margin-right: 400px;
-        display: none;
-    }
-    .circulo-contato .circulo-p1 {
-        margin-left: 30px;
-        margin-top: -10px;
-        width: 130px;
+        margin-right: 250px;
     }
     .circulo-contato .circulo-p2 {
-        margin-left: -200px;
-        margin-top: 780px;
-        width: 220px;
+        margin-left: 10px;
+        width: 230px;
     }
-    .inicio-contato .title2 {
-        font-size: 1.5em;
+    .container-contato form {
+        width: 95%;
+        margin: 0 auto;
     }
-    .card-principal-contato {
-        height: 900px;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .btn-enviar {
-        width: 260px;
-        height: 33px;
-        font-size: 1.3em;
-        margin-bottom: 20px;
-    }
-    .container-contato-texto {
-        width: 100%;
-        height: 390px;
-    }
-    .titulo-contato-container-texto {
-        font-size: 1.6em;
+    .container-contato form .btn-enviar {
+        width: 90%;
+        margin-left: 6%;
     }
     .container-img {
-        margin-top: 474px;
-        margin-left: -80px;
+        margin-left: 125px;
+        width: 70%;
     }
-    .container-img img {
-        width: 460px;
+    .container-icons-contato {
+        margin-left: 20px;
+        font-size: 15px;
     }
 }
